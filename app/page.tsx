@@ -200,9 +200,9 @@ export default function Home() {
                 <div className="grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
                   <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500"></span>
                   <div className="space-y-1">
-                    <p className="text-md font-medium leading-none">兼容性强</p>
+                    <p className="text-md font-medium leading-none">个性化</p>
                     <p className="text-md text-muted-foreground">
-                      支持多种格式的文章，确保您的内容在微信公众号上完美呈现。
+                      支持多种主题的文章，确保您的内容在微信公众号上完美呈现。
                     </p>
                   </div>
                 </div>
@@ -240,10 +240,10 @@ export default function Home() {
                   <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500"></span>
                   <div className="space-y-1">
                     <p className="text-md font-medium leading-none">
-                      1. 登录 Notion Nice
+                      1. 去 Chrome Webstore 下载插件
                     </p>
                     <p className="text-md text-muted-foreground">
-                      使用您的账户登录 Notion Nice 平台。
+                      下载 Notion Nice 插件并安装到您的 Chrome 浏览器。
                     </p>
                   </div>
                 </div>
@@ -262,10 +262,10 @@ export default function Home() {
                   <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500"></span>
                   <div className="space-y-1">
                     <p className="text-md font-medium leading-none">
-                      3. 一键渲染
+                      3. 一键生成渲染内容
                     </p>
                     <p className="text-md text-muted-foreground">
-                      点击一键渲染按钮，自动转换为微信公众号格式。
+                      {`点击[立刻生成]按钮，自动转换为微信公众号格式。`}
                     </p>
                   </div>
                 </div>
@@ -306,9 +306,9 @@ export default function Home() {
               <div className="mb-4 text-primary-500">
                 <PaletteIcon className="w-10 h-10" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">多种模板</h3>
+              <h3 className="text-xl font-semibold mb-2">多种主题</h3>
               <p className="text-gray-600">
-                提供多种文章模板，满足不同内容创作者的需求。
+                提供多种文章主题，满足不同内容创作者的需求。
               </p>
             </div>
             <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
@@ -363,19 +363,19 @@ export default function Home() {
       <footer className="bg-background border-t">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex flex-wrap">
-            <div className="w-full md:w-1/4 text-center md:text-left px-8">
+            <div className="w-full md:w-1/3 text-center md:text-left px-8">
               <p className="uppercase mb-6 font-bold">Notion Nice</p>
               <div className="flex flex-col">
                 Notion Nice 是一款专为内容创作者设计的工具，帮助您将 Notion
                 中的文章快速渲染并发布到微信公众号，节省时间，提高效率。
               </div>
             </div>
-            <div className="w-full md:w-1/4 text-center md:text-left px-8">
+            <div className="w-full md:w-1/3 text-center md:text-left px-8">
               <p className="uppercase mb-6 font-bold">产品</p>
               <ul className="mb-4">
                 <li className="mt-2">
                   <Link
-                    href="#"
+                    href="/"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
                     Notion Nice
@@ -383,15 +383,17 @@ export default function Home() {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href="#"
+                    href="https://harvest.prius.ai/"
+                    target="_blank"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
-                    其他工具
+                    Harvest 收藏助手
                   </Link>
                 </li>
                 <li className="mt-2">
                   <Link
-                    href="#"
+                    href="https://chromewebstore.google.com/detail/djjgmfjamlfgkldmfpeicablnnfadkai/support"
+                    target="_blank"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
                     支持
@@ -399,49 +401,14 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="w-full md:w-1/4 text-center md:text-left px-8">
-              <p className="uppercase mb-6 font-bold">朋友</p>
-              <ul className="mb-4">
-                <li className="mt-2">
-                  <Link
-                    href="#"
-                    className="hover:underline text-gray-600 hover:text-gray-800"
-                  >
-                    ChatGPT
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    href="#"
-                    className="hover:underline text-gray-600 hover:text-gray-800"
-                  >
-                    Claude
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    href="#"
-                    className="hover:underline text-gray-600 hover:text-gray-800"
-                  >
-                    Google
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full md:w-1/4 text-center md:text-left px-8">
+            
+            <div className="w-full md:w-1/3 text-center md:text-left px-8">
               <p className="uppercase mb-6 font-bold">服务</p>
               <ul className="mb-4">
                 <li className="mt-2">
                   <Link
-                    href="#about"
-                    className="hover:underline text-gray-600 hover:text-gray-800"
-                  >
-                    关于我们
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link
-                    href="#privacy"
+                    target="_blank"
+                    href="https://life-nice.notion.site/8a1563fb3a854d0c9a802e513869b52e"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
                     隐私政策
@@ -449,7 +416,8 @@ export default function Home() {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href="#terms"
+                    target="_blank"
+                    href="https://life-nice.notion.site/29e3bcd8d3c643f89bba309f84927650"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
                     服务条款
