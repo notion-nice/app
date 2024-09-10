@@ -220,7 +220,7 @@ export default function PricingSectionCards() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full">Sign up</Button>
+              <Button className="w-full">立刻购买</Button>
             </CardFooter>
           </Card>
           {/* End Card */}

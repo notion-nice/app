@@ -2,12 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {
   BookTypeIcon,
   HeadsetIcon,
   ImageUpIcon,
@@ -20,78 +14,9 @@ import {
 const url =
   "https://chromewebstore.google.com/detail/notion-nice/djjgmfjamlfgkldmfpeicablnnfadkai";
 
-const menus = [
-  // {
-  //   name: "定价",
-  //   href: "#pricing",
-  // },
-  {
-    name: "博客",
-    href: "http://life-nice.notion.site",
-  },
-];
-
 export default function Home() {
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="max-w-7xl mx-auto flex h-14 items-center px-4 sm:px-6 lg:px-8">
-          <div className="mr-4 hidden md:flex">
-            <Link className="text-lg font-medium mr-16" href="">
-              <div className="flex items-center gap-x-2 cursor-pointer">
-                <Image
-                  width={128}
-                  height={128}
-                  src="/logo.png"
-                  alt="Notion Nice"
-                  className="w-8 h-8"
-                />
-                <h1 className="text-xl font-bold">Notion Nice</h1>
-              </div>
-            </Link>
-            <nav className="flex items-center space-x-6 text-sm">
-              {menus.map((menu) => (
-                <Link key={menu.name} target="_blank" href={menu.href}>
-                  {menu.name}
-                </Link>
-              ))}
-            </nav>
-          </div>
-          <div className="flex flex-1 items-center justify-between space-x-4 md:justify-end">
-            <div className="md:hidden w-full flex items-center gap-x-2">
-              <Link className="text-lg font-medium mr-16" href="/">
-                <div className="flex items-center gap-x-2 cursor-pointer">
-                  <Image
-                    width={128}
-                    height={128}
-                    src="/logo.png"
-                    alt="Notion Nice"
-                    className="w-8 h-8"
-                  />
-                  <h1 className="text-xl font-bold">Notion Nice</h1>
-                </div>
-              </Link>
-              <div className="flex-1"></div>
-
-              <DropdownMenu>
-                <DropdownMenuTrigger>
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle menu</span>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  {menus.map((menu) => (
-                    <DropdownMenuItem key={menu.name}>
-                      <Link target="_blank" href={menu.href}>
-                        {menu.name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-          </div>
-        </div>
-      </header>
       <div className="bg-gradient-to-t from-zinc-50 to-white dark:from-zinc-950 dark:to-black relative">
         <div className="absolute bg-[url('/_convertfast/gradient-bg-0.svg')] bg-auto bg-no-repeat z-0 inset-0 top-0 bottom-0 left-0 right-0 grayscale"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
@@ -401,7 +326,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            
+
             <div className="w-full md:w-1/3 text-center md:text-left px-8">
               <p className="uppercase mb-6 font-bold">服务</p>
               <ul className="mb-4">
