@@ -1,3 +1,5 @@
+"use client";
+
 import { css } from "@codemirror/lang-css";
 import { EditorView } from "@codemirror/view";
 import { Compartment, EditorState } from "@codemirror/state";
