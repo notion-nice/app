@@ -308,7 +308,7 @@ export default function Home() {
                 </li>
                 <li className="mt-2">
                   <Link
-                    href="https://harvest.prius.ai/"
+                    href="https://harvest.superai42.com/"
                     target="_blank"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
