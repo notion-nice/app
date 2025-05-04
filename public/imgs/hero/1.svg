@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1024 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1024" height="768" fill="#FFFFFF"/>
+  <g id="notion-document">
+    <rect x="160" y="184" width="320" height="400" rx="8" fill="#E0E0E0"/>
+    <rect x="152" y="176" width="320" height="400" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+    <g id="notion-grid" opacity="0.1">
+      <path d="M172 216h280M172 256h280M172 296h280M172 336h280M172 376h280M172 416h280M172 456h280M172 496h280" stroke="#000000" stroke-width="1"/>
+    </g>
+    <g id="notion-logo" transform="translate(172, 196)">
+      <rect width="24" height="24" rx="4" fill="#000000"/>
+      <path d="M8 8h8v8h-8z" fill="#FFFFFF"/>
+    </g>
+  </g>
+  <g id="wechat-document">
+    <rect x="552" y="184" width="320" height="400" rx="20" fill="#E0E0E0"/>
+    <rect x="544" y="176" width="320" height="400" rx="20" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+    <rect x="544" y="176" width="320" height="60" rx="20" fill="#07C160" fill-opacity="0.1"/>
+    <g id="wechat-logo" transform="translate(564, 196)">
+      <circle cx="12" cy="12" r="12" fill="#07C160"/>
+      <path d="M8 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM20 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#FFFFFF"/>
+    </g>
+    <g id="content-lines" opacity="0.2">
+      <rect x="564" y="256" width="280" height="8" rx="4" fill="#333333"/>
+      <rect x="564" y="276" width="240" height="8" rx="4" fill="#333333"/>
+      <rect x="564" y="296" width="260" height="8" rx="4" fill="#333333"/>
+      <rect x="564" y="316" width="220" height="8" rx="4" fill="#333333"/>
+    </g>
+  </g>
+  <g id="transformation" opacity="0.1">
+    <path d="M472 276c20 0 80 100 80 100s-60 100-80 100" stroke="#07C160" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+</svg>

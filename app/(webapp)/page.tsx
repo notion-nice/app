@@ -38,7 +38,7 @@ export default function Home() {
             width={1024}
             height={768}
             alt="Notion Nice"
-            src="/imgs/hero/1.jpeg"
+            src="/imgs/hero/1.svg"
             className="mt-8 max-w-full md:max-w-5xl mx-auto rounded-md shadow-2xl border sm:mt-12 block dark:hidden"
           />
         </div>
@@ -52,7 +52,7 @@ export default function Home() {
                 height={768}
                 alt="Notion Nice"
                 className="w-full max-w-md rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                src="/imgs/sections/1.jpeg"
+                src="/imgs/sections/1.svg"
               />
             </div>
             <div className="order-2 md:order-2">
@@ -139,7 +139,7 @@ export default function Home() {
                 height={768}
                 alt="Notion Nice"
                 className="w-full max-w-md rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                src="/imgs/sections/2.jpeg"
+                src="/imgs/sections/2.svg"
               />
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function Home() {
                 height={768}
                 alt="Notion Nice"
                 className="w-full max-w-md rounded-xl shadow-xl ring-1 ring-gray-400/10"
-                src="/imgs/sections/3.jpeg"
+                src="/imgs/sections/3.svg"
               />
             </div>
             <div className="order-2 md:order-2">
