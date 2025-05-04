@@ -49,3 +49,6 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+      - name: Trigger dokploy redeploy
+        run: |
+          curl -X GET https://dokploy.superai42.com/api/deploy/bbfgJDWqb6DNhGfyipd8C
