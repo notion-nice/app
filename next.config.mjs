@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  images: { unoptimized: true },
-  assetPrefix: "/",
+  output: "standalone",
+  reactStrictMode: false,
 };
 
 export default nextConfig;
