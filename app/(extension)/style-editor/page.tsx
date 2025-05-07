@@ -9,7 +9,7 @@ import { minimalSetup } from "codemirror";
 import React, { useEffect, useRef } from "react";
 
 const StyleEditor = () => {
-  const editorView = useRef<EditorView>();
+  const editorView = useRef<EditorView>(undefined);
   const editor = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
