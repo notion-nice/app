@@ -171,15 +171,15 @@ export default function PricingSectionCards() {
             <CardContent>
               <ul className="mt-7 space-y-2.5 text-sm">
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">1 user</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Plan features</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Product support</span>
                 </li>
               </ul>
@@ -197,7 +197,7 @@ export default function PricingSectionCards() {
               <Badge className="uppercase w-max self-center mb-3">
                 Most popular
               </Badge>
-              <CardTitle className="!mb-7">Startup</CardTitle>
+              <CardTitle className="mb-7!">Startup</CardTitle>
               <span className="font-bold text-5xl">£39</span>
             </CardHeader>
             <CardDescription className="text-center w-11/12 mx-auto">
@@ -206,15 +206,15 @@ export default function PricingSectionCards() {
             <CardContent>
               <ul className="mt-7 space-y-2.5 text-sm">
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">2 user</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Plan features</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Product support</span>
                 </li>
               </ul>
@@ -236,15 +236,15 @@ export default function PricingSectionCards() {
             <CardContent>
               <ul className="mt-7 space-y-2.5 text-sm">
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">5 user</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Plan features</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Product support</span>
                 </li>
               </ul>
@@ -268,15 +268,15 @@ export default function PricingSectionCards() {
             <CardContent>
               <ul className="mt-7 space-y-2.5 text-sm">
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">10 user</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Plan features</span>
                 </li>
                 <li className="flex space-x-2">
-                  <CheckIcon className="flex-shrink-0 mt-0.5 h-4 w-4" />
+                  <CheckIcon className="shrink-0 mt-0.5 h-4 w-4" />
                   <span className="text-muted-foreground">Product support</span>
                 </li>
               </ul>

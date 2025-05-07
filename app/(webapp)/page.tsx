@@ -17,7 +17,7 @@ const url =
 export default function Home() {
   return (
     <>
-      <div className="bg-gradient-to-t from-zinc-50 to-white dark:from-zinc-950 dark:to-black relative">
+      <div className="bg-linear-to-t from-zinc-50 to-white dark:from-zinc-950 dark:to-black relative">
         <div className="absolute bg-[url('/_convertfast/gradient-bg-0.svg')] bg-auto bg-no-repeat z-0 inset-0 top-0 bottom-0 left-0 right-0 grayscale"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -199,7 +199,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-t py-16 px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
+      <div className="bg-linear-to-t py-16 px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
             Notion Nice 的主要功能
@@ -209,7 +209,7 @@ export default function Home() {
         </div>
         <div className="mt-8 flex flex-col gap-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12">
-            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
+            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-xs">
               <div className="mb-4 text-primary-500">
                 <BookTypeIcon className="w-10 h-10" />
               </div>
@@ -218,7 +218,7 @@ export default function Home() {
                 快速将 Notion 中的文章转换为微信公众号格式，省去繁琐步骤。
               </p>
             </div>
-            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
+            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-xs">
               <div className="mb-4 text-primary-500">
                 <WorkflowIcon className="w-10 h-10" />
               </div>
@@ -227,7 +227,7 @@ export default function Home() {
                 自动调整文章格式，确保在微信公众号上完美显示。
               </p>
             </div>
-            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
+            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-xs">
               <div className="mb-4 text-primary-500">
                 <PaletteIcon className="w-10 h-10" />
               </div>
@@ -236,7 +236,7 @@ export default function Home() {
                 提供多种文章主题，满足不同内容创作者的需求。
               </p>
             </div>
-            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
+            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-xs">
               <div className="mb-4 text-primary-500">
                 <PanelsTopLeftIcon className="w-10 h-10" />
               </div>
@@ -245,7 +245,7 @@ export default function Home() {
                 在发布前实时预览文章效果，确保内容无误。
               </p>
             </div>
-            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
+            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-xs">
               <div className="mb-4 text-primary-500">
                 <ImageUpIcon className="w-10 h-10" />
               </div>
@@ -254,7 +254,7 @@ export default function Home() {
                 提供临时图床服务，方便您复制到公众号中直接使用。
               </p>
             </div>
-            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-sm">
+            <div className="text-left p-6 border border-gray-200 rounded-lg shadow-xs">
               <div className="mb-4 text-primary-500">
                 <HeadsetIcon className="w-10 h-10" />
               </div>
@@ -266,7 +266,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="bg-gradient-to-t from-zinc-50 to-white dark:from-zinc-950 relative">
+      <section className="bg-linear-to-t from-zinc-50 to-white dark:from-zinc-950 relative">
         <div className="absolute bg-[url('/_convertfast/gradient-bg-0.svg')] bg-auto bg-no-repeat inset-0 top-0 bottom-0 left-0 right-0 grayscale bg-center"></div>
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 relative z-10">
           <div className="mx-auto max-w-2xl text-center">
