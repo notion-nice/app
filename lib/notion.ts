@@ -7,6 +7,10 @@ import { NotionCompatAPI } from "./notion-compat";
 
 const apiKey = process.env.NOTION_API_KEY;
 
+if (!apiKey) {
+  throw new Error("NOTION_API_KEY is not set");
+}
+
 export const notion = new Client({ auth: apiKey });
 
 /**
