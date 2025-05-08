@@ -332,8 +332,7 @@ export default function Home() {
               <ul className="mb-4">
                 <li className="mt-2">
                   <Link
-                    target="_blank"
-                    href="https://life-nice.notion.site/8a1563fb3a854d0c9a802e513869b52e"
+                    href="/docs/privacy-policy"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
                     隐私政策
@@ -341,8 +340,7 @@ export default function Home() {
                 </li>
                 <li className="mt-2">
                   <Link
-                    target="_blank"
-                    href="https://life-nice.notion.site/29e3bcd8d3c643f89bba309f84927650"
+                    href="/docs/terms-of-service"
                     className="hover:underline text-gray-600 hover:text-gray-800"
                   >
                     服务条款

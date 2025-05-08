@@ -17,6 +17,10 @@ const menus = [
     name: "帮助中心",
     href: "/docs",
   },
+  {
+    name: "联系与社群",
+    href: "/docs/support",
+  },
 ];
 export default function RootLayout({
   children,

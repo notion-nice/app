@@ -8,6 +8,12 @@ interface PageProps {
   params: Promise<{ slug?: string[] }>;
 }
 
+const alias: Record<string, string> = {
+  support: "727e5c98-3d55-4110-85c3-10aa04f7a718",
+  "terms-of-service": "29e3bcd8-d3c6-43f8-9bba-309f84927650",
+  "privacy-policy": "8a1563fb-3a85-4d0c-9a80-2e513869b52e",
+};
+
 const getPage = async (slug?: string[]) => {
   let pageId = slug?.join("/");
   if (!pageId) {
@@ -17,8 +23,10 @@ const getPage = async (slug?: string[]) => {
       return null;
     }
   }
+  if (alias[pageId]) {
+    pageId = alias[pageId];
+  }
   const recordMap = await notionCustom.getPage(pageId);
-
   return recordMap as typeof recordMap & {
     raw: {
       page: PageObjectResponse;
@@ -58,9 +66,14 @@ export default async function Page(props: PageProps) {
 export async function generateStaticParams() {
   const response = await getAllPages();
 
-  return response.results.map((page) => ({
-    slug: [page.id],
-  }));
+  return [
+    ...response.results.map((page) => ({
+      slug: [page.id],
+    })),
+    ...Object.entries(alias).map(([alias]) => ({
+      slug: [alias],
+    })),
+  ];
 }
 
 export async function generateMetadata(props: PageProps) {

@@ -3,7 +3,7 @@ import {
   PageObjectResponse,
   RichTextItemResponse,
 } from "@notionhq/client/build/src/api-endpoints";
-import { NotionCompatAPI } from "notion-compat";
+import { NotionCompatAPI } from "./notion-compat";
 
 const apiKey = process.env.NOTION_API_KEY;
 
