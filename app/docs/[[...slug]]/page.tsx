@@ -1,46 +1,75 @@
-import { source } from "@/lib/source";
-import {
-  DocsBody,
-  DocsDescription,
-  DocsPage,
-  DocsTitle,
-} from "fumadocs-ui/page";
-import { notFound } from "next/navigation";
-import { getMDXComponents } from "@/components/mdx-components";
+import { DocsBody, DocsPage, DocsTitle } from "fumadocs-ui/page";
+import { getAllPages, getPageInfo, notion, notionCustom } from "@/lib/notion";
+import { Renderer } from "./renderer";
+import { notFound, redirect, RedirectType } from "next/navigation";
+import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
 
-export default async function Page(props: {
+interface PageProps {
   params: Promise<{ slug?: string[] }>;
-}) {
-  const params = await props.params;
-  const page = source.getPage(params.slug);
-  if (!page) notFound();
+}
 
-  const MDX = page.data.body;
+const getPage = async (slug?: string[]) => {
+  let pageId = slug?.join("/");
+  if (!pageId) {
+    if (process.env.NOTION_HOME_PAGE_ID) {
+      pageId = process.env.NOTION_HOME_PAGE_ID;
+    } else {
+      return null;
+    }
+  }
+  const recordMap = await notionCustom.getPage(pageId);
+
+  return recordMap as typeof recordMap & {
+    raw: {
+      page: PageObjectResponse;
+    };
+  };
+};
+
+export default async function Page(props: PageProps) {
+  const params = await props.params;
+  if (!params.slug) {
+    if (process.env.NOTION_HOME_PAGE_ID) {
+      return redirect(
+        `/docs/${process.env.NOTION_HOME_PAGE_ID}`,
+        RedirectType.replace
+      );
+    }
+  }
+  const recordMap = await getPage(params.slug);
+  if (!recordMap) notFound();
+
+  const page = recordMap.raw.page;
+  const info = getPageInfo(page);
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
-      <DocsTitle>{page.data.title}</DocsTitle>
-      <DocsDescription>{page.data.description}</DocsDescription>
+    <DocsPage
+      tableOfContent={{ enabled: false }}
+      tableOfContentPopover={{ enabled: false }}
+    >
+      <DocsTitle>{info.title}</DocsTitle>
       <DocsBody>
-        <MDX components={getMDXComponents()} />
+        <Renderer className="!m-0 !px-0 !w-full" recordMap={recordMap} />
       </DocsBody>
     </DocsPage>
   );
 }
 
 export async function generateStaticParams() {
-  return source.generateParams();
+  const response = await getAllPages();
+
+  return response.results.map((page) => ({
+    slug: [page.id],
+  }));
 }
 
-export async function generateMetadata(props: {
-  params: Promise<{ slug?: string[] }>;
-}) {
+export async function generateMetadata(props: PageProps) {
   const params = await props.params;
-  const page = source.getPage(params.slug);
+  const page = await getPage(params.slug).catch(() => notFound());
   if (!page) notFound();
+  const info = getPageInfo(page.raw.page);
 
   return {
-    title: page.data.title,
-    description: page.data.description,
+    title: info.title,
   };
 }

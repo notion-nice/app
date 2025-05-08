@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-linear-to-t from-zinc-50 to-white dark:from-zinc-950 dark:to-black relative">
-        <div className="absolute bg-[url('/_convertfast/gradient-bg-0.svg')] bg-auto bg-no-repeat z-0 inset-0 top-0 bottom-0 left-0 right-0 grayscale"></div>
+        <div className="absolute bg-gradient-to-l from-zinc-50 to-white dark:from-zinc-950 dark:to-black bg-auto bg-no-repeat z-0 inset-0 top-0 bottom-0 left-0 right-0 grayscale"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-5xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-primary mb-6 drop-shadow-md">
@@ -267,7 +267,7 @@ export default function Home() {
         </div>
       </div>
       <section className="bg-linear-to-t from-zinc-50 to-white dark:from-zinc-950 relative">
-        <div className="absolute bg-[url('/_convertfast/gradient-bg-0.svg')] bg-auto bg-no-repeat inset-0 top-0 bottom-0 left-0 right-0 grayscale bg-center"></div>
+        <div className="absolute bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-950 bg-auto bg-no-repeat inset-0 top-0 bottom-0 left-0 right-0 grayscale bg-center"></div>
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 relative z-10">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">

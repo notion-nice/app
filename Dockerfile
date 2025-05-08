@@ -24,6 +24,11 @@ COPY . .
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED=1
+ARG NOTION_API_KEY
+
+ENV NOTION_API_KEY=${NOTION_API_KEY}
+ENV NOTION_DATABASE_ID=aecaefdd78e84984bb138351b877ba50
+ENV NOTION_HOME_PAGE_ID=c0228378-9dc6-446a-84dd-0e85223ad92d
 
 RUN corepack enable pnpm
 RUN pnpm run build

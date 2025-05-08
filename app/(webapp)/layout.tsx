@@ -14,8 +14,8 @@ const menus = [
   //   href: "#pricing",
   // },
   {
-    name: "博客",
-    href: "http://life-nice.notion.site",
+    name: "帮助中心",
+    href: "/docs",
   },
 ];
 export default function RootLayout({
@@ -43,7 +43,7 @@ export default function RootLayout({
               </Link>
               <nav className="flex items-center space-x-6 text-sm">
                 {menus.map((menu) => (
-                  <Link key={menu.name} target="_blank" href={menu.href}>
+                  <Link key={menu.name} href={menu.href}>
                     {menu.name}
                   </Link>
                 ))}
@@ -73,9 +73,7 @@ export default function RootLayout({
                   <DropdownMenuContent>
                     {menus.map((menu) => (
                       <DropdownMenuItem key={menu.name}>
-                        <Link target="_blank" href={menu.href}>
-                          {menu.name}
-                        </Link>
+                        <Link href={menu.href}>{menu.name}</Link>
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
