@@ -30,6 +30,10 @@ ENV NOTION_API_KEY=${NOTION_API_KEY}
 ENV NOTION_DATABASE_ID=aecaefdd78e84984bb138351b877ba50
 ENV NOTION_HOME_PAGE_ID=c0228378-9dc6-446a-84dd-0e85223ad92d
 
+# 添加调试信息
+RUN echo "Checking NOTION_API_KEY: ${NOTION_API_KEY:+'is set'}"
+RUN echo "NOTION_API_KEY length: ${#NOTION_API_KEY}"
+
 RUN corepack enable pnpm
 RUN pnpm run build
 

@@ -1,5 +1,5 @@
 import { DocsBody, DocsPage, DocsTitle } from "fumadocs-ui/page";
-import { getAllPages, getPageInfo, notion, notionCustom } from "@/lib/notion";
+import { getAllPages, getPageInfo, notionCustom } from "@/lib/notion";
 import { Renderer } from "./renderer";
 import { notFound, redirect, RedirectType } from "next/navigation";
 import { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
