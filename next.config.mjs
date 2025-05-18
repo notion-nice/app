@@ -9,6 +9,13 @@ const apiUrl = isDev ? "http://43.139.161.167:8000" : "http://10.1.24.16:8000";
 const nextConfig = {
   output: "standalone",
   reactStrictMode: false,
+  redirects: async () => [
+    {
+      source: "/notion-nice-converter-manual",
+      destination: "/docs/c0228378-9dc6-446a-84dd-0e85223ad92d",
+      permanent: true,
+    },
+  ],
   rewrites: async () => [
     {
       source: "/style-editor.html",

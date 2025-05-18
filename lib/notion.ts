@@ -11,7 +11,7 @@ if (!apiKey) {
   throw new Error("NOTION_API_KEY is not set");
 }
 
-export const notion = new Client({ auth: apiKey });
+export const notion = new Client({ auth: apiKey, fetch: fetch });
 
 /**
  * Non-official client used for react-notion-x
