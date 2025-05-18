@@ -1,9 +1,7 @@
 import { createMDX } from "fumadocs-mdx/next";
 const withMDX = createMDX();
 
-const isDev = process.env.NODE_ENV === "development";
-
-const apiUrl = isDev ? "http://43.139.161.167:8000" : "http://10.1.24.16:8000";
+const apiUrl = "http://43.139.161.167:8000";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
