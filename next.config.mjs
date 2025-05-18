@@ -12,7 +12,7 @@ const nextConfig = {
     },
     {
       source: "/api/nice/:path*",
-      destination: "https://notion-nice.com/api/nice/:path*",
+      destination: "http://10.1.24.16:8000/api/nice/:path*",
     },
   ],
 };
